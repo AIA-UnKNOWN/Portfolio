@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Colors */
+  --white: #FFFFFF;
+  --gold: #E8B500;
+  --gray: #C4C4C4;
+  --black: #242424;
+  --transparent-black: rgba(36,36,36,0.7);
+
+  /* Font Size */
+  --title-font-size: 50px;
+
+  /* TImeline Height */
+  --timeline-height: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.highlight-letter {
+  color: var(--gold);
+  font-size: 75px;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.title::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 5px;
+  background: var(--white);
+}
+
+.container {
+  max-width: 1366px;
+  margin: auto;
+}
+
+/* Animation Class */
+.stack.popup-from-left {
+  opacity: 1;
+  margin-left: 0 !important;
+}
+
+.stack.popup-from-right {
+  opacity: 1;
+  margin-right: 0 !important;
 }
