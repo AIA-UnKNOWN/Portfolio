@@ -63,14 +63,6 @@
 	background: var( --gold );
 }
 
-.stack:nth-child(even) .dot {
-
-}
-
-.stack:nth-child(odd) .dot {
-
-}
-
 .languages {
 	padding: 10px;
 	height: 150px;
