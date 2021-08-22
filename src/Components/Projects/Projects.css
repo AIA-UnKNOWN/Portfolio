@@ -1,0 +1,77 @@
+.my-projects .projects {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 200px 50px;
+}
+
+.project {
+	width: 350px;
+	background: var( --black );
+	padding: 10px;
+	position: relative;
+	transform: scale(0);
+	transition: all 1s;
+}
+
+.project::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	background: var( --gold );
+}
+
+.project .image-container {
+	width: 100%;
+	height: 250px;
+	position: relative;
+}
+
+.project .image-container:hover > img {
+	object-fit: cover;
+}
+
+.project .image-container:hover > .on-hover {
+	opacity: 1;
+}
+
+.project .image-container .on-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: var( --transparent-gray );
+	transition: all .5s;
+	opacity: 0;
+}
+
+.project .image-container .on-hover a {
+	background: var( --gold );
+	text-decoration: none;
+	color: var( --black );
+	padding: 8px 20px;
+	border-radius: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.project .name {
+	font-size: 25px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.project .stacks {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	margin: 5px 10px 30px;
+}
+

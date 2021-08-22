@@ -7,6 +7,7 @@
   --gray: #C4C4C4;
   --black: #242424;
   --transparent-black: rgba(36,36,36,0.7);
+  --transparent-gray: rgba(196,196,196,0.7);
 
   /* Font Size */
   --title-font-size: 50px;
@@ -21,6 +22,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   color: white;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .highlight-letter {
@@ -52,13 +57,21 @@
   margin: auto;
 }
 
+
 /* Animation Class */
-.stack.popup-from-left {
+
+/* Tech Stacks Section */
+.tech-stacks .stack.popup-from-left {
   opacity: 1;
   margin-left: 0 !important;
 }
 
-.stack.popup-from-right {
+.tech-stacks .stack.popup-from-right {
   opacity: 1;
   margin-right: 0 !important;
+}
+
+/* Project Section */
+.popup {
+  transform: scale(1) !important;
 }

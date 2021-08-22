@@ -16,11 +16,11 @@ function Header() {
 					<p className="description">
 					With many real world experiences worked at startup as a remote developer
 					</p>
-					<a href="#" className="see-projects-button">See Projects</a>
+					<a href="#my-projects" className="see-projects-button">See Projects</a>
 				</div>
 
 				<div className="image-container">
-					<img src="eagle-logo.jpg" alt="My profile" />
+					<img src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" alt="My profile" />
 				</div>
 			</div>
 

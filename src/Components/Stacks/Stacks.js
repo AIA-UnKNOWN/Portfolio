@@ -13,9 +13,8 @@ function Stacks() {
 		const screenYBreakpointForAnim = ( window.innerHeight / 100 * percent );
 		const root = document.documentElement;
 		const timeline = document.querySelector( '.timeline' );
-		const evenStacks = document.querySelectorAll('.stack:nth-child(even)');
-		const oddStacks = document.querySelectorAll('.stack:nth-child(odd)');
-		
+		const evenStacks = document.querySelectorAll( '.stack:nth-child(even)' );
+		const oddStacks = document.querySelectorAll( '.stack:nth-child(odd)' );
 
 		window.addEventListener( 'scroll', function() {
 			const timelineDistanceFromTop = timeline.getBoundingClientRect().top;
