@@ -66,6 +66,7 @@
 	font-size: 25px;
 	text-align: center;
 	padding: 20px 0;
+	color: var( --white );
 }
 
 .project .stacks {
@@ -75,3 +76,6 @@
 	margin: 5px 10px 30px;
 }
 
+.project .stacks .stack {
+	color: var( --white );
+}

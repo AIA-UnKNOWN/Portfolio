@@ -24,6 +24,7 @@
 
 .me {
 	width: 600px;
+	color: var( --white );
 }
 
 .me .name {

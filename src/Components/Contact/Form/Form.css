@@ -1,0 +1,69 @@
+.form {
+	margin: 200px auto;
+	background: var( --black );
+	width: 800px;
+	padding: 50px;
+}
+
+.fields {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+.input, .textarea {
+	width: 47%;
+}
+
+.field {
+	margin-bottom: 30px;
+}
+
+.field:last-child {
+	margin-bottom: 0;
+}
+
+.field label,
+.field input,
+.textarea label,
+.textarea textarea {
+	display: block;
+}
+
+.field label, .textarea label {
+	margin-bottom: 10px;
+	font-size: 19px;
+	color: var( --white );
+}
+
+.field input {
+	color: var( --black );
+	padding: 15px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	width: 100%;
+}
+
+.textarea textarea {
+	color: var( --black );
+	width: 100%;
+	height: 80%;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	padding: 15px;
+	resize: none;
+}
+
+.form button[type="submit"] {
+	background: var( --gold );
+	color: var( --black );
+	border: none;
+	padding: 12px 50px;
+	border-radius: 50px;
+	font-size: 19px;
+	display: block;
+	margin: 60px auto 0;
+	cursor: pointer;
+}
