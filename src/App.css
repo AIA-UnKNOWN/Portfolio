@@ -1,4 +1,12 @@
 .App {
-	background: url('images/bg.jpg');
-	background-attachment: fixed; /* temporary */
+	background: url('images/bg.jpg') no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+@media (max-width: 1024px) {
+	.App {
+		background-repeat: repeat;
+		background-size: cover !important;
+	}
 }
