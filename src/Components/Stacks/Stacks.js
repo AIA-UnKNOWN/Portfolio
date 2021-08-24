@@ -1,12 +1,10 @@
 import './Stacks.css';
 import React, { useState, useEffect } from 'react';
 
+import { dummyStacks } from './dummy-stacks';
+
 function Stacks() {
-	const [ stacks, setStacks ] = useState({
-		'Frontend': [ 'HTML', 'CSS', 'SASS', "Javascript", 'ReactJS' ],
-		'Backend': [ 'NodeJS', 'Express', 'MySQL', "PHP", 'Laravel' ],
-		'Fullstack': [ 'Github', 'Gitlab', 'Git', 'Linux', 'Testing' ]
-	});
+	const [ stacks, setStacks ] = useState(dummyStacks);
 
 	useEffect(() => {
 		const percent = 80;
@@ -62,14 +60,14 @@ function Stacks() {
 				<div className="stacks">
 					<div className="timeline"></div>
 
-					{Object.keys(stacks).map(key => (
-					<div className="stack" key={key}>
+					{stacks.map(stack => (
+					<div className="stack" key={stack.name}>
 						<div className="dot"></div>
 
-						<p className="stack-title">{key}</p>
+						<p className="stack-title">{stack.name}</p>
 
 						<div className="languages">
-						{stacks[key].map(lang =>
+						{stack.stacks.map(lang =>
 							<span className="lang" key={lang}>{lang}</span>
 						)}
 						</div>
