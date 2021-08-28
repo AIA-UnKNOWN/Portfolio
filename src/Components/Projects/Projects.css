@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-flow: row wrap;
 	padding: 200px 50px;
 }
 
@@ -78,4 +79,20 @@
 
 .project .stacks .stack {
 	color: var( --white );
+}
+
+@media (max-width: 767px) {
+
+	.my-projects .projects {
+		padding: 100px 20px;
+	}
+
+	.project {
+		margin-bottom: 20px;
+	}
+
+	.project:last-child {
+		margin-bottom: 0;
+	}
+
 }

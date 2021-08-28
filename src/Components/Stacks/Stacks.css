@@ -82,3 +82,42 @@
 	text-align: center;
 	font-size: 19px;
 }
+
+
+@media (max-width: 767px) {
+
+	.tech-stacks {
+		padding: 0 20px;
+		margin: 100px auto;
+	}
+
+	.tech-stacks .stacks {
+		margin: 100px 0;
+		padding: 0;
+	}
+
+	.tech-stacks .stack {
+		width: 90%;
+	}
+	.tech-stacks .stack:nth-child(even) {
+		align-self: flex-end;
+		margin-left: 0;
+	}
+
+	.tech-stacks .stack:nth-child(odd) {
+		align-self: flex-end;
+		margin-right: 0;
+	}
+
+	.tech-stacks .stack .dot {
+		left: 0;
+		transform: translateX(0);
+	}
+
+	.timeline {
+		z-index: 0;
+		left: 10px;
+		transform: translateX(0) scaleY( var(--timeline-height) );
+	}
+
+}

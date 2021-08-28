@@ -67,3 +67,46 @@
 	margin: 60px auto 0;
 	cursor: pointer;
 }
+
+
+@media (max-width: 767px) {
+
+	.form {
+		padding: 30px 20px;
+		width: 90%;
+		margin: 100px auto;
+	}
+
+	.input, .textarea {
+		width: 100%;
+	}
+
+	.field {
+		margin-bottom: 20px;
+	}
+
+	.field:last-child {
+		margin-bottom: 20px;
+	}
+
+	.field label, .textarea label {
+		font-size: 16px;
+	}
+
+	.field input, .textarea textarea {
+		padding: 13px;
+	}
+
+	.textarea {
+		height: 150px;
+	}
+
+	.textarea textarea {
+		height: 100%;
+	}
+
+	.form button[type="submit"] {
+		font-size: 16px;
+	}
+
+}

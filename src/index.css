@@ -77,3 +77,12 @@ html {
 .popup {
   transform: scale(1) !important;
 }
+
+
+@media (max-width: 767px) {
+
+  .highlight-letter {
+    font-size: 55px;
+  }
+
+}
