@@ -16,7 +16,6 @@
 	top: 20px;
 	left: 50%;
 	transform-origin: top;
-	transform: translateX(-50%) scaleY( var(--timeline-height) );
 	width: 5px;
 	height: 1px;
 	background: white;

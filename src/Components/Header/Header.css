@@ -1,5 +1,6 @@
 .header {
 	height: 100vh;
+	max-height: 1080px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;

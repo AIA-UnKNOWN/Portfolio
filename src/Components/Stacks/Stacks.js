@@ -1,27 +1,28 @@
 import './Stacks.css';
 import React, { useState, useEffect } from 'react';
 
-import { dummyStacks } from './dummy-stacks';
+import { myStacks } from './my-stacks';
+
 
 function Stacks() {
-	const [ stacks, setStacks ] = useState(dummyStacks);
+	const stacks = myStacks;
 
 	useEffect(() => {
 		const percent = 80;
-		const screenYBreakpointForAnim = ( window.innerHeight / 100 * percent );
+		const screenYBreakpointForAnim = (window.innerHeight / 100 * percent);
 		const root = document.documentElement;
-		const timeline = document.querySelector( '.timeline' );
-		const evenStacks = document.querySelectorAll( '.stack:nth-child(even)' );
-		const oddStacks = document.querySelectorAll( '.stack:nth-child(odd)' );
+		const timeline = document.querySelector('.timeline');
+		const evenStacks = document.querySelectorAll('.stack:nth-child(even)');
+		const oddStacks = document.querySelectorAll('.stack:nth-child(odd)');
 
-		window.addEventListener( 'scroll', function() {
+		window.addEventListener('scroll', function() {
 			const timelineDistanceFromTop = timeline.getBoundingClientRect().top;
 			
 			if (timelineDistanceFromTop <= screenYBreakpointForAnim) {
 				const timelineHeight = screenYBreakpointForAnim - timelineDistanceFromTop;
-
+				
 				if (timelineHeight <= 840) {
-					setTimelineHeight( timelineHeight );
+					setTimelineHeight(timeline, timelineHeight);
 				}
 			}
 
@@ -29,7 +30,7 @@ function Stacks() {
 				const stackDistanceFromTop = stack.getBoundingClientRect().top;
 
 				if (stackDistanceFromTop <= screenYBreakpointForAnim) {
-					animate( stack, 'popup-from-left' );
+					animate(stack, 'popup-from-left');
 				}
 			});
 
@@ -37,19 +38,19 @@ function Stacks() {
 				const stackDistanceFromTop = stack.getBoundingClientRect().top;
 
 				if (stackDistanceFromTop <= screenYBreakpointForAnim) {
-					animate( stack, 'popup-from-right' );
+					animate(stack, 'popup-from-right');
 				}
-			})
+			});
 		});
+	}, []);
 
-		function animate( element, animationClass ) {
-			element.classList.add( animationClass );
-		}
+	function animate(element, animationClass) {
+		element.classList.add(animationClass);
+	}
 
-		function setTimelineHeight( timelineHeight ) {
-			root.style.setProperty('--timeline-height', timelineHeight);
-		}
-	});
+	function setTimelineHeight(element, timelineHeight) {
+		element.style.transform = `translateX(-50%) scaleY(${timelineHeight})`;
+	}
 
 	return (
 		<div className="container">

@@ -18,18 +18,32 @@ function Form() {
 
 					<div className="field">
 						<label>Name</label>
-						<input type="text" name="name" id="name" />
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Your name"
+						/>
 					</div>
 					<div className="field">
 						<label>Email</label>
-						<input type="email" name="email" id="email" />
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Your email"
+						/>
 					</div>
 
 				</div>
 
 				<div className="textarea">
 					<label>Message</label>
-					<textarea name="message" id="message"></textarea>
+					<textarea
+						name="message"
+						id="message"
+						placeholder="Leave a message to reach me out!"
+					></textarea>
 				</div>
 
 			</div>
