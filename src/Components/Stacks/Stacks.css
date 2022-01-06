@@ -13,7 +13,7 @@
 .timeline {
 	display: inline-block;
 	position: absolute;
-	top: 20px;
+	top: 25px;
 	left: 50%;
 	transform-origin: top;
 	width: 5px;
@@ -115,7 +115,7 @@
 
 	.timeline {
 		z-index: 0;
-		left: 10px;
+		left: 12px;
 		transform: translateX(0) scaleY( var(--timeline-height) );
 	}
 

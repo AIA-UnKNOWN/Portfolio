@@ -1,5 +1,5 @@
 import './Stacks.css';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import { myStacks } from './my-stacks';
 
@@ -15,14 +15,20 @@ function Stacks() {
 		const evenStacks = document.querySelectorAll('.stack:nth-child(even)');
 		const oddStacks = document.querySelectorAll('.stack:nth-child(odd)');
 
+		const dots = document.querySelectorAll('.dot');
+		const lastDot = dots[dots.length - 1];
+		const lastDotOffsetTop = lastDot.offsetTop;
+
 		window.addEventListener('scroll', function() {
 			const timelineDistanceFromTop = timeline.getBoundingClientRect().top;
 			
 			if (timelineDistanceFromTop <= screenYBreakpointForAnim) {
 				const timelineHeight = screenYBreakpointForAnim - timelineDistanceFromTop;
 				
-				if (timelineHeight <= 840) {
+				if (timelineHeight <= lastDotOffsetTop) {
 					setTimelineHeight(timeline, timelineHeight);
+				} else {
+					setTimelineHeight(timeline, lastDotOffsetTop);
 				}
 			}
 
@@ -55,28 +61,21 @@ function Stacks() {
 	return (
 		<div className="container">
 			<div className="tech-stacks">
-
 				<p className="title">Tech Stacks</p>
-
 				<div className="stacks">
 					<div className="timeline"></div>
-
 					{stacks.map(stack => (
-					<div className="stack" key={stack.name}>
-						<div className="dot"></div>
-
-						<p className="stack-title">{stack.name}</p>
-
-						<div className="languages">
-						{stack.stacks.map(lang =>
-							<span className="lang" key={lang}>{lang}</span>
-						)}
+						<div className="stack" key={stack.name}>
+							<div className="dot"></div>
+							<p className="stack-title">{stack.name}</p>
+							<div className="languages">
+							{stack.stacks.map(lang =>
+								<span className="lang" key={lang}>{lang}</span>
+							)}
+							</div>
 						</div>
-					</div>
-					)
-					)}
+					))}
 				</div>
-
 			</div>
 		</div>
 	);
