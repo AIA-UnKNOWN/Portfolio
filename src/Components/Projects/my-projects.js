@@ -1,4 +1,4 @@
-export const dummyProjects = [
+export const myProjects = [
 	{
 		name: 'Project 1',
 		stacks: [ 'HTML', 'CSS', 'Javascript', 'ReactJS', 'MySQL' ],

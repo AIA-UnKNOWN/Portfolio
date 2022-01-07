@@ -1,5 +1,5 @@
 import './Stacks.css';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { myStacks } from './my-stacks';
 
@@ -10,7 +10,6 @@ function Stacks() {
 	useEffect(() => {
 		const percent = 80;
 		const screenYBreakpointForAnim = (window.innerHeight / 100 * percent);
-		const root = document.documentElement;
 		const timeline = document.querySelector('.timeline');
 		const evenStacks = document.querySelectorAll('.stack:nth-child(even)');
 		const oddStacks = document.querySelectorAll('.stack:nth-child(odd)');

@@ -1,30 +1,30 @@
 import './Projects.css';
 import React, { useState, useEffect } from 'react';
 
-import { dummyProjects } from './dummy-projects';
+import { myProjects } from './my-projects';
 
 function Projects() {
-	const [ projects, setProjects ] = useState(dummyProjects);
+	const [projects, setProjects] = useState(myProjects);
 
 	useEffect(() => {
 		const percent = 80;
-		const screenYBreakpointForAnim = ( window.innerHeight / 100 * percent );
+		const screenYBreakpointForAnim = (window.innerHeight / 100 * percent);
 		const projects = document.querySelectorAll('.project');
 
-		window.addEventListener( 'scroll', function() {
+		window.addEventListener('scroll', function() {
 
 			projects.forEach(project => {
 				const projectDistanceFromTop = project.getBoundingClientRect().top;
 
 				if (projectDistanceFromTop <= screenYBreakpointForAnim) {
-					animate( project, 'popup' );
+					animate(project, 'popup');
 				}
 			});
 
 		});
 
-		function animate( element, animationClass ) {
-			element.classList.add( animationClass );
+		function animate(element, animationClass) {
+			element.classList.add(animationClass);
 		}
 	});
 

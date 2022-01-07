@@ -5,7 +5,7 @@ export const myStacks = [
 	},
 	{
 		name: 'Backend',
-		stacks: ['NodeJS', 'Express', 'MySQL', 'PHP', 'Laravel']
+		stacks: ['NodeJS', 'Express', 'PHP', 'Laravel', 'MySQL']
 	},
 	{
 		name: 'Mobile Development',
@@ -13,6 +13,6 @@ export const myStacks = [
 	},
 	{
 		name: 'Other Techonologies',
-		stacks: ['React Native', 'Github', 'Gitlab', 'Git', 'Figma']
+		stacks: ['Webpack', 'Jest', 'Github', 'Gitlab', 'Git', 'Figma']
 	}
 ];
