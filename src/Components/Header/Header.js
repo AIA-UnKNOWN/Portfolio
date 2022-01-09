@@ -12,7 +12,7 @@ function Header() {
 					<p className="name">
 						<span className="highlight-letter">A</span>jboy <span className="highlight-letter">I</span>an <span className="highlight-letter">A</span>bordo
 					</p>
-					<p className="developer">Full Stack Developer</p>
+					<p className="developer">Software Developer</p>
 					<p className="description">
 					With many real world experiences worked at startup as a remote developer
 					</p>
