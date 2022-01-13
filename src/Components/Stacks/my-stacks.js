@@ -13,6 +13,6 @@ export const myStacks = [
 	},
 	{
 		name: 'Other Techonologies',
-		stacks: ['Webpack', 'Jest', 'Github', 'Gitlab', 'Git', 'Figma']
+		stacks: ['Webpack', 'Jest', 'Firebase', 'Github', 'Gitlab', 'Git', 'Figma']
 	}
 ];
