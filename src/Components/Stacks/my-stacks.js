@@ -1,7 +1,7 @@
 export const myStacks = [
 	{
 		name: 'Frontend',
-		stacks: ['HTML', 'CSS', 'SASS', "Javascript", 'ReactJS']
+		stacks: ['HTML', 'CSS', 'SASS', 'Tailwind CSS', "Javascript", 'ReactJS', 'Redux', 'Webpack']
 	},
 	{
 		name: 'Backend',
@@ -13,6 +13,6 @@ export const myStacks = [
 	},
 	{
 		name: 'Other Techonologies',
-		stacks: ['Webpack', 'Jest', 'Firebase', 'Github', 'Gitlab', 'Git', 'Figma']
+		stacks: ['Jest', 'Git', 'Github', 'Gitlab', 'Figma', 'Firebase']
 	}
 ];

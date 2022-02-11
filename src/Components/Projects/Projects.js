@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import { myProjects } from './my-projects';
 
 function Projects() {
-	const [projects, setProjects] = useState(myProjects);
 
 	useEffect(() => {
 		const percent = 80;
@@ -35,28 +34,28 @@ function Projects() {
 				<p className="title">Projects</p>
 
 				<div className="projects">
-				{projects.map(project => (
-					<div className="project" key={project.name}>
+					{myProjects.map(project => (
+						<div className="project" key={project.name}>
 
-						<div className="image-container">
-							<img src={project.image} alt={project.name} />
-							<div className="on-hover">
-								<a href={project.url} target="_blank">Visit Site</a>
+							<div className="image-container">
+								<img src={project.image} alt={project.name} />
+								<div className="on-hover">
+									<a href={project.url} target="_blank">Visit Site</a>
+								</div>
 							</div>
+							
+							<p className="name">{project.name}</p>
+
+							<p className="description">{project.description}</p>
+
+							<div className="stacks">
+							{project.stacks.map(stack => (
+								<span className="stack" key={stack}>{stack}</span>
+							))}
+							</div>
+
 						</div>
-						
-						<p className="name">{project.name}</p>
-
-						<p className="description">{project.description}</p>
-
-						<div className="stacks">
-						{project.stacks.map(stack => (
-							<span className="stack" key={stack}>{stack}</span>
-						))}
-						</div>
-
-					</div>
-				))}
+					))}
 				</div>
 
 			</div>

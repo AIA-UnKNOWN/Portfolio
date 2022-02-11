@@ -93,6 +93,7 @@
 
 	.my-projects .projects {
 		padding: 100px 20px;
+		justify-content: center;
 	}
 
 	.project {
