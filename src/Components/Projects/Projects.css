@@ -105,3 +105,20 @@
 	}
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	.my-projects .projects {
+		justify-content: center;
+		flex-flow: column wrap;
+	}
+
+	.project {
+		margin-bottom: 10px;
+	}
+
+	.project:last-of-type {
+		margin-bottom: 0;
+	}
+
+}
