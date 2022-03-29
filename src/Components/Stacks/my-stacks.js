@@ -1,7 +1,7 @@
 export const myStacks = [
 	{
 		name: 'Frontend',
-		stacks: ['HTML', 'CSS', 'SASS', 'Tailwind CSS', "Javascript", 'ReactJS', 'Redux', 'Webpack']
+		stacks: ['HTML', 'CSS', 'SASS', 'Tailwind CSS', "Javascript", 'Typescript', 'ReactJS', 'Redux', 'Webpack']
 	},
 	{
 		name: 'Backend',
