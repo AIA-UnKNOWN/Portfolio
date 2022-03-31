@@ -1,5 +1,5 @@
 .header {
-	height: 100vh;
+	min-height: 100vh;
 	max-height: 1080px;
 	display: flex;
 	justify-content: space-around;
@@ -43,14 +43,37 @@
 	margin-bottom: 45px;
 }
 
+.me .header-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
 .me .see-projects-button {
-	display: inline-block;
 	text-decoration: none;
 	background: var(--gold);
 	color: var(--black);
 	font-size: 19px;
 	padding: 12px 30px;
 	border-radius: 50px;
+	border: 2px solid var(--gold);
+}
+
+.me .download-button {
+	margin-left: 10px;
+	text-decoration: none;
+	font-size: 19px;
+	padding: 12px 30px;
+	border-radius: 50px;
+	border: 2px solid var(--gold);
+	background: var(--black);
+	color: var(--gold);
+	transition: all .3s;
+}
+
+.me .download-button:hover {
+	background: var(--gold);
+	color: var(--black);
 }
 
 .header .image-container {
@@ -71,6 +94,7 @@
 
 	.content {
 		justify-content: center;
+		padding-top: 70px;
 	}
 
 	.me {
@@ -95,11 +119,20 @@
 		text-align: center;
 	}
 
+	.me .header-buttons {
+		flex-direction: column;
+	}
+
 	.me .see-projects-button {
 		font-size: 16px;
 		display: block;
 		width: fit-content;
 		margin: auto;
+	}
+
+	.me .download-button {
+		margin-left: 0;
+		margin-top: 10px;
 	}
 
 	.header .image-container {
@@ -132,10 +165,18 @@
 		text-align: center;
 	}
 
+	.me .header-buttons {
+		flex-direction: column;
+	}
+
 	.me .see-projects-button {
 		display: block;
 		width: fit-content;
-		margin: auto;
+	}
+
+	.me .download-button {
+		margin-left: 0;
+		margin-top: 20px;
 	}
 
 	.me .image-container {

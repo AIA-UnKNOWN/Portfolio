@@ -14,10 +14,10 @@ export const myProjects = [
 		url: ''
 	},
 	{
-		name: 'Project 3',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		stacks: ['HTML', 'CSS', 'Javascript', 'ReactJS', 'MySQL'],
-		image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN26hOftzocJIhBD4xrhROdm8fcchqALyBwQ&usqp=CAU',
-		url: ''
+		name: 'Bug Tracker',
+		description: 'Simpel and fast bug tracking system that can be used for daily work.',
+		stacks: ['HTML', 'CSS', 'Tailwind CSS', 'Javascript', 'ReactJS', 'Redux', 'PHP', 'Laravel', 'MySQL'],
+		image: 'https://aia-unknown.github.io/Portfolio/images/bug-tracker.png',
+		url: 'https://github.com/AIA-UnKNOWN/bug-tracker'
 	}
 ];

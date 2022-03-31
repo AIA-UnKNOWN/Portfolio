@@ -16,7 +16,10 @@ function Header() {
 					<p className="description">
 					With many real world experiences worked at startup as a remote developer
 					</p>
-					<a href="#my-projects" className="see-projects-button">See Projects</a>
+					<div className="header-buttons">
+						<a href="#my-projects" className="see-projects-button">See Projects</a>
+						<a href="./AjboyIanAbordo-resume.pdf" className="download-button" download>Download Resume</a>
+					</div>
 				</div>
 
 				<div className="image-container">
