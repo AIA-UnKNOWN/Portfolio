@@ -1,4 +1,4 @@
-import './Stacks.css';
+import './style.css';
 import { useEffect } from 'react';
 
 import { myStacks } from './my-stacks';
