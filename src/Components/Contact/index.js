@@ -1,7 +1,7 @@
-import './Contact.css';
+import './style.css';
 import React from 'react';
 
-import Form from './Form/Form';
+import Form from './Form';
 
 function Contact() {
 

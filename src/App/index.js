@@ -1,9 +1,9 @@
-import './App.css';
-import Header from './Components/Header/Header';
-import Stacks from './Components/Stacks/Stacks';
-import Projects from './Components/Projects/Projects';
-import Contact from './Components/Contact/Contact';
-import Footer from './Components/Footer/Footer';
+import './style.css';
+import Header from '../Components/Header/Header';
+import Stacks from '../Components/Stacks/Stacks';
+import Projects from '../Components/Projects/Projects';
+import Contact from '../Components/Contact';
+import Footer from '../Components/Footer/Footer';
 
 import { useEffect } from 'react';
 

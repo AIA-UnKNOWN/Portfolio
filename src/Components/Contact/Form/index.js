@@ -1,4 +1,4 @@
-import './Form.css';
+import './style.css';
 import React from 'react';
 
 import { validateEmail } from './email-validation';
