@@ -18,6 +18,6 @@ export const myProjects = [
 		description: "Easily document and track the progress of your stories, researches, documentations, and more.",
 		stacks: ['HTML', 'CSS', 'Tailwind CSS', 'Javascript', 'ReactJS', 'Redux', 'Jest', 'PHP', 'Laravel', 'MySQL'],
 		image: `https://aia-unknown.github.io/Portfolio/images/authors-text-editor.png`,
-		url: 'https://github.com/AIA-UnKNOWN/authors-text-editor'
+		url: 'http://authors-text-editor.ajboyianabordo.online/'
 	},
 ];
