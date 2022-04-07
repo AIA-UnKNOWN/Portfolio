@@ -18,7 +18,7 @@ function Header() {
 					</p>
 					<div className="header-buttons">
 						<a href="#my-projects" className="see-projects-button">See Projects</a>
-						<a href="./AjboyIanAbordo-resume.pdf" className="download-button" download>Download Resume</a>
+						<a href="./AJBOY_IAN_ABORDO_resume.pdf" className="download-button" download>Download Resume</a>
 					</div>
 				</div>
 
