@@ -1,23 +1,19 @@
 import './style.css';
-import React from 'react';
-
-import { validateEmail } from './email-validation';
+import { useRef } from 'react';
+import useForm from './hook';
 
 function Form() {
-
-	function sendEmail(e) {
-		validateEmail(e);
-	}
+	const form = useRef();
+	const { sendButtonText, sendEmail, formError } = useForm(form);
 
 	return (
-		<form onSubmit={sendEmail} className="form">
-
+		<form ref={form} onSubmit={sendEmail} className="form">
 			<div className="fields">
-
 				<div className="input">
-
 					<div className="field">
-						<label>Name</label>
+						<label>
+							Name {formError.name && (<span className="error">*</span>)}
+						</label>
 						<input
 							type="text"
 							name="name"
@@ -26,7 +22,9 @@ function Form() {
 						/>
 					</div>
 					<div className="field">
-						<label>Email</label>
+						<label>
+							Email {formError.email && (<span className="error">*</span>)}
+						</label>
 						<input
 							type="email"
 							name="email"
@@ -34,22 +32,21 @@ function Form() {
 							placeholder="Your email"
 						/>
 					</div>
-
 				</div>
-
 				<div className="textarea">
-					<label>Message</label>
+					<label>
+						Message {formError.message && (<span className="error">*</span>)}
+					</label>
 					<textarea
 						name="message"
 						id="message"
 						placeholder="Leave a message to reach me out!"
 					></textarea>
 				</div>
-
 			</div>
-
-			<button type="submit">Send</button>
-
+			<button type="submit">
+				{sendButtonText}
+			</button>
 		</form>
 	);
 }

@@ -14,6 +14,7 @@ function Projects() {
 				<div className="projects">
 					{myProjects.map(project => (
 						<Project
+							key={project.name}
 							project={project}
 						/>
 					))}
