@@ -7,9 +7,9 @@ const Project = ({ project }) => {
         <img src={project.image} alt={project.name} />
         <div className="on-hover">
           <a
-            className={!project.isReady && 'disabled'}
+            className={!project.isReady ? 'disabled' : ''}
             href={project.url}
-            target={project.isReady && '_blank'}
+            target={project.isReady ? '_blank' : '_self'}
           >
             {project.type === 'website' ? 'View' : 'Download'}
           </a>
