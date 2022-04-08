@@ -14,7 +14,7 @@ function Header() {
 					</p>
 					<p className="developer">Software Developer</p>
 					<p className="description">
-					With many real world experiences worked at startup as a remote developer
+						Continuously learning is the way for me to be a great developer
 					</p>
 					<div className="header-buttons">
 						<a href="#my-projects" className="see-projects-button">See Projects</a>
