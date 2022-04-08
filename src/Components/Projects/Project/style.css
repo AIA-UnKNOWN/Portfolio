@@ -84,6 +84,7 @@
 .project .stacks .stack {
 	color: var( --white );
 	font-weight: 500;
+	padding: 0 5px;
 }
 
 @media (max-width: 767px) {
