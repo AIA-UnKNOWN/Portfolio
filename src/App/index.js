@@ -2,6 +2,7 @@ import './style.css';
 import Header from '../Components/Header';
 import Stacks from '../Components/Stacks';
 import Projects from '../Components/Projects';
+import Testimonials from '../Components/Testimonials';
 import Contact from '../Components/Contact';
 import Footer from '../Components/Footer';
 
@@ -23,6 +24,7 @@ function App() {
       <Header />
       <Stacks />
       <Projects />
+      <Testimonials />
       <Contact />
       <Footer />
     </div>
